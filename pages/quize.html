@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quize App</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
     <main class="">
-        <div class="quize-card">
-            
+        <div class="quize-card" >
+            <div id="quize-card"></div>
+            <div class="flex gap-5 submit-buttons">
+                <button class="outlined"><i class="fa-solid fa-angle-left"></i>Back</button>
+                <button class="outlined" id="submit">check<i class="fa-solid fa-check-double"></i></button>
+            </div>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+
+    <script src="../assets/js/questions-data.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
