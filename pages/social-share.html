@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize App</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <main class="">
+        <div class="card">
+            <div>
+                <p class="bold">Congratulations! You have successfully passed the test..</p>
+                <p>Enter your full name to get your certificate.</p>
+                <input type="text" id="name" placeholder="Ex: Dalia Hisham Alawneh">
+            </div>
+            <a class="outlined btn button-outlined" id="certificate-link"><i class="fa fa-certificate"></i> Get
+                certificate</a> 
+            <a href="../index.html" class="outlined btn button-outlined" id="back-btn"><i
+                    class="fa-solid fa-angle-left"></i> Back To Home</a>
+            <p>Share your achievement with friends.</p>
+            <button class="outlined btn button-outlined facebook" onclick="shareOnFacebook()"><i class="fa-brands fa-facebook-f"></i> share To Facebook</button>
+            <button class="outlined btn button-outlined whatsapp" onclick="shareOnWhatsApp()"><i class="fa-brands fa-whatsapp"></i> share To Whatsapp</button>
+            <button class="outlined btn button-outlined linkedin" onclick="shareOnLinkedIn()"><i class="fa-brands fa-linkedin"></i> share To LinkedIn</button>
+            <button class="outlined btn button-outlined twitter" onclick="shareOnTwitter()"><i class="fa-brands fa-twitter"></i> share To Twitter</button>
+            <button class="outlined btn button-outlined telegram" onclick="shareOnTelegram() "><i class="fa-brands fa-telegram"></i> share To Telegram</button>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+    <script src="../assets/js/get-certificate.js"></script>
+
+    <script>
+        const message = "Hi, I'm Happy to share that I got Certified from Quize App";
+        const link = "https://example.com/blog-post";
+        function shareOnFacebook() {
+            const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}&quote=${encodeURIComponent(message)}`;
+            window.open(facebookURL, "_blank");
+        }
+        function shareOnWhatsApp() {
+            const whatsappURL = `https://wa.me/?text=${encodeURIComponent(message + " " + link)}`;
+            window.open(whatsappURL, "_blank");
+        }
+        function shareOnTwitter() {
+            const twitterURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(link)}`;
+            window.open(twitterURL, "_blank");
+        }
+        function shareOnLinkedIn() {
+            const linkedinURL = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`;
+            window.open(linkedinURL, "_blank");
+        }
+        function shareOnTelegram() {
+            const telegramURL = `https://telegram.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(message)}`;
+            window.open(telegramURL, "_blank");
+        }
+    </script>
+</body>
+
+</html>
