@@ -23,8 +23,8 @@ const questions = [
     },
     {
         title: "What is the expected output of the following code.",
-        code: `let x = 2 
-        console.log(++x)`,
+        code: `let x = 2  
+console.log(++x)`,
         options: [
             2,
             3,
@@ -36,7 +36,7 @@ const questions = [
     {
         title: "What is the expected output of the following code.",
         code: `let x = 2
-        console.log(x++)`,
+console.log(x++)`,
         options: [
             2,
             3,
@@ -48,7 +48,7 @@ const questions = [
     {
         title: "What is the expected output of the following code.",
         code: `let x = 2
-        console.log((x++))`,
+console.log((x++))`,
         options: [
             2,
             3,
@@ -72,8 +72,8 @@ const questions = [
     {
         title: "What is the expected output of the following code.",
         code: `var x = 2
-        let x = 10
-        console.log(x)`,
+let x = 10
+console.log(x)`,
         options: [
             2,
             10,
@@ -85,8 +85,8 @@ const questions = [
     {
         title: "What is the expected output of the following code.",
         code: `var x = 2
-        var x = 10
-        console.log(x)`,
+var x = 10
+console.log(x)`,
         options: [
             2,
             10,

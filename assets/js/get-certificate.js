@@ -9,6 +9,7 @@ const urlParams = new URLSearchParams(queryString);
 const name = urlParams?.get('name');
 
 const username = document.getElementById('username')
+username?.textContent = name
 if (username) {
     username.textContent = name;
 }
