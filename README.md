@@ -23,10 +23,10 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/your-username/js-quiz-app.git
   
-Navigate to the project directory:
+2. Navigate to the project directory:
 
     ```bash
-cd js-quiz-app
+   cd js-quiz-app
 Open index.html in your preferred web browser.
 
 Usage
